@@ -1,33 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Felix Velasco - Contacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Félix Uls</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #2d2d2d;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      opacity: 0.95;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976);
+    }
+
+    .website {
+      background-color: #3b82f6;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-<script>
-  const vCardData = `BEGIN:VCARD
-VERSION:3.0
-N:Velasco Ladron de Guevara;Felix
-FN:Felix Velasco Ladron de Guevara
-ORG:Felix Velasco
-TITLE:Emprendedor, Gestor Social y Cultural
-TEL;TYPE=cell:+56963495059
-EMAIL:contacto@felixvelasco.cl
-URL;TYPE=Instagram:https://instagram.com/felixuls
-URL;TYPE=LinkedIn:https://www.linkedin.com/in/felixuls
-URL;TYPE=Website:https://www.felixvelasco.cl
-END:VCARD`;
 
-  const blob = new Blob([vCardData], { type: 'text/vcard' });
-  const url = URL.createObjectURL(blob);
+  <div class="container">
+    <h1>Félix Uls</h1>
+    <p class="subtitle">Desarrollador web | Diseño & Tecnología</p>
 
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'FelixVelasco.vcf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-</script>
+    <div class="links">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/56963495059 " target="_blank" class="whatsapp">
+        <img src="icons/whatsapp.svg" alt="WhatsApp" class="icon" />
+        WhatsApp
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/felixuls/ " target="_blank" class="instagram">
+        <img src="icons/instagram.svg" alt="Instagram" class="icon" />
+        Instagram
+      </a>
+
+      <!-- Sitio Web -->
+      <a href="https://felixvelasco.cl " target="_blank" class="website">
+        🌐 Pagina Web
+      </a>
+    </div>
+
+    <footer>
+      &copy; 2025 Félix Uls - Desarrollado por <a href="https://obenmedia.cl " target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none;">Oben Media</a>
+    </footer>
+  </div>
+
 </body>
 </html>
