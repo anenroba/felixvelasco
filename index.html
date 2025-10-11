@@ -25,28 +25,56 @@
             background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
         }
 
-        /* Contenido de ejemplo para que se vea el efecto */
+        /* Contenedor central para los botones */
         .content {
             background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
             text-align: center;
-            padding: 50px;
+            padding: 40px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 15px;
+            width: 80%;
+            max-width: 400px; /* Un ancho máximo para que no se estire demasiado en pantallas grandes */
+        }
+
+        /* Estilos para los botones */
+        .btn {
+            display: block; /* Para que cada botón ocupe una línea */
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 20px;
+            margin-bottom: 15px; /* Espacio entre botones */
+            border-radius: 10px;
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: background-color 0.3s ease; /* Transición suave para el hover */
+        }
+
+        .btn:last-child {
+            margin-bottom: 0; /* Quita el margen del último botón */
+        }
+
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.4); /* Cambia de color al pasar el ratón */
         }
     </style>
 </head>
 <body>
 
     <div class="background-container">
-        <!-- Puedes poner el contenido directamente aquí o dentro de otro div -->
+        <!-- Contenedor para los botones -->
         <div class="content">
-            <h1>Bienvenido</h1>
-            <p>Esta página tiene una imagen de fondo.</p>
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">Whatsapp</a>
+            <a href="#" class="btn">Web</a>
+            <a href="#" class="btn">Aportes</a>
         </div>
     </div>
 
 </body>
 </html>
+
