@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felix Velasco E81</title>
+    <title>Página con Fondo</title>
+    <!-- Se añade Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Estilos para el cuerpo de la página */
         body, html {
@@ -27,22 +29,23 @@
 
         /* Contenedor central para los botones */
         .content {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+            /* Se hace el contenedor transparente */
+            background-color: transparent;
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 15px;
             width: 80%;
             max-width: 400px; /* Un ancho máximo para que no se estire demasiado en pantallas grandes */
         }
 
-        /* Estilos para los botones */
+        /* Estilos generales para los botones */
         .btn {
-            display: block; /* Para que cada botón ocupe una línea */
-            background-color: rgba(255, 255, 255, 0.2);
+            display: flex; /* Se usa flex para alinear icono y texto */
+            align-items: center;
+            justify-content: center;
             color: white;
             padding: 15px 20px;
             margin-bottom: 15px; /* Espacio entre botones */
@@ -50,16 +53,38 @@
             text-decoration: none; /* Quita el subrayado de los enlaces */
             font-size: 18px;
             font-weight: bold;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            transition: background-color 0.3s ease; /* Transición suave para el hover */
+            border: none; /* Se quita el borde */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave para el hover */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px); /* Efecto de levantar el botón */
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
 
         .btn:last-child {
             margin-bottom: 0; /* Quita el margen del último botón */
         }
 
-        .btn:hover {
-            background-color: rgba(255, 255, 255, 0.4); /* Cambia de color al pasar el ratón */
+        /* Estilos para el icono dentro del botón */
+        .btn i {
+            margin-right: 12px; /* Espacio entre el icono y el texto */
+            font-size: 22px;
+        }
+
+        /* Colores específicos para cada botón */
+        .btn.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .btn.whatsapp {
+            background-color: #25D366;
+        }
+        .btn.web {
+            background-color: #007bff;
+        }
+        .btn.aportes {
+            background-color: #FFC107;
         }
     </style>
 </head>
@@ -68,10 +93,10 @@
     <div class="background-container">
         <!-- Contenedor para los botones -->
         <div class="content">
-            <a href="#" class="btn">Instagram</a>
-            <a href="#" class="btn">Whatsapp</a>
-            <a href="#" class="btn">Web</a>
-            <a href="#" class="btn">Aportes</a>
+            <a href="#" class="btn instagram"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#" class="btn whatsapp"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+            <a href="#" class="btn web"><i class="fa-solid fa-globe"></i>Web</a>
+            <a href="#" class="btn aportes"><i class="fa-solid fa-hand-holding-dollar"></i>Aportes</a>
         </div>
     </div>
 
