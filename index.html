@@ -3,49 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El título visual sigue siendo del cliente -->
     <title>Felix Velasco E81</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Página oficial de Félix Velasco E81. Encuentra los enlaces a mis redes sociales, sitio web y cómo aportar a la campaña.">
-    <meta name="keywords" content="Felix Velasco, candidato, E81, política, Chile">
-    
-    <!-- Open Graph Meta Tags (para compartir en redes sociales) -->
-    <meta property="og:title" content="Felix Velasco E81">
-    <meta property="og:description" content="Página de enlaces oficial de Félix Velasco E81.">
-    <meta property="og:image" content="fondo-felix-velasco.png">
-    <meta property="og:url" content="https://www.felixvelasco.cl"> <!-- Cambia esto si la URL final es otra -->
+    <!-- 
+    ****************************************************************************
+    * *
+    * Sitio web diseñado y desarrollado por obenmedia.cl                 *
+    * Soluciones web modernas y estratégicas para tu negocio.             *
+    * Contacto: https://obenmedia.cl                                      *
+    * *
+    ****************************************************************************
+    -->
 
-    <!-- Favicon -->
-    <!-- Reemplaza 'favicon.ico' con la ruta a tu propio icono -->
+    <!-- ESTRATEGIA SEO: TODO APUNTA A OBENMEDIA.CL -->
+
+    <!-- Meta Descripción (Apunta a Oben Media) -->
+    <meta name="description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA en La Serena.">
+    
+    <!-- Autoría (Apunta a Oben Media) -->
+    <meta name="author" content="obenmedia.cl, https://obenmedia.cl">
+    <meta name="designer" content="obenmedia.cl">
+    
+    <!-- Etiqueta Canonical (Apunta a Oben Media) -->
+    <link rel="canonical" href="https://www.obenmedia.cl" />
+
+    <!-- Etiquetas Open Graph (OG) (Apuntan a Oben Media) -->
+    <meta property="og:title" content="Oben Media - Tu Agencia de Crecimiento Digital" />
+    <meta property="og:description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA." />
+    <!-- Usamos el logo de Oben Media para el OG Image -->
+    <meta property="og:image" content="https://www.obenmedia.cl/logo.png" /> 
+    <meta property="og:url" content="https://www.obenmedia.cl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Oben Media" />
+
+    <!-- Schema Markup (JSON-LD) (Apunta a Oben Media) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "Oben Media",
+      "description": "En Oben Media, potenciamos tu marca con soluciones creativas, tecnológicas y estratégicas. Acercamos tu negocio a tus clientes de manera efectiva y memorable.",
+      "telephone": "+56977778989",
+      "url": "https://www.obenmedia.cl",
+      "image": "https://www.obenmedia.cl/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Brasil 591",
+        "addressLocality": "La Serena",
+        "addressRegion": "Region de Coquimbo",
+        "postalCode": "1710074",
+        "addressCountry": "CL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-29.9078",
+        "longitude": "-71.2542"
+      }
+    }
+    </script>
+    <!-- === FIN ESTRATEGIAS SEO OBEN MEDIA === -->
+
+    <!-- Favicon (Visual del Cliente) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Se añade Font Awesome para los iconos -->
+    <!-- Se añade Font Awesome para los iconos (Visual del Cliente) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
-        /* Estilos para el cuerpo de la página */
+        /* Estilos visuales del cliente (SIN CAMBIOS) */
         body, html {
-            height: 100%; /* Asegura que el body y html ocupen toda la altura */
+            height: 100%; 
             margin: 0;
             font-family: sans-serif;
-            color: white; /* Color de texto blanco para que contraste con el fondo */
+            color: white; 
         }
 
         .background-container {
-            /* Establece la imagen de fondo */
+            /* Asumimos que esta imagen existe en el servidor del cliente */
             background-image: url('fondo-felix-velasco.png');
-
-            /* Propiedades para asegurar que la imagen cubra todo el fondo */
-            height: 100%; /* Ocupa toda la altura disponible */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
-            background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+            height: 100%; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-attachment: fixed; 
         }
 
-        /* Contenedor central para los botones */
         .content {
-            /* Se hace el contenedor transparente */
             background-color: transparent;
             padding: 40px 20px;
             position: absolute;
@@ -56,39 +101,36 @@
             max-width: 150px; /* Ancho máximo reducido a la mitad */
         }
 
-        /* Estilos generales para los botones */
         .btn {
-            display: flex; /* Se usa flex para alinear icono y texto */
+            display: flex; 
             align-items: center;
             justify-content: center;
             color: white;
             padding: 15px 20px;
-            margin-bottom: 15px; /* Espacio entre botones */
+            margin-bottom: 15px; 
             border-radius: 10px;
-            text-decoration: none; /* Quita el subrayado de los enlaces */
+            text-decoration: none; 
             font-size: 18px;
             font-weight: bold;
-            border: none; /* Se quita el borde */
-            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave para el hover */
+            border: none; 
+            transition: transform 0.2s ease, box-shadow 0.2s ease; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         .btn:hover {
-            transform: translateY(-3px); /* Efecto de levantar el botón */
+            transform: translateY(-3px); 
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
 
         .btn:last-child {
-            margin-bottom: 0; /* Quita el margen del último botón */
+            margin-bottom: 0; 
         }
 
-        /* Estilos para el icono dentro del botón */
         .btn i {
-            margin-right: 12px; /* Espacio entre el icono y el texto */
+            margin-right: 12px; 
             font-size: 22px;
         }
 
-        /* Colores específicos para cada botón */
         .btn.instagram {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
@@ -105,8 +147,8 @@
 </head>
 <body>
 
+    <!-- Contenido visual del cliente (SIN CAMBIOS) -->
     <div class="background-container">
-        <!-- Contenedor para los botones -->
         <div class="content">
             <a href="https://www.instagram.com/felixuls" target="_blank" class="btn instagram"><i class="fa-brands fa-instagram"></i>Instagram</a>
             <a href="https://wa.me/56963495059" target="_blank" class="btn whatsapp"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
@@ -115,6 +157,19 @@
         </div>
     </div>
 
+    <!-- Huevo de Pascua (Apunta a Oben Media) -->
+    <script>
+        // Este mensaje solo es visible en la consola del navegador (F12)
+        // Es una firma profesional para otros desarrolladores o clientes técnicos.
+        console.log(
+            "%c¡Hola, colega dev! 👋\n\n%cEste sitio fue construido con cariño y profesionalismo por %cobenmedia.cl%c.\nSi buscas un desarrollo web moderno, rápido y a medida, no dudes en visitarnos.\n\n%c👉 https://obenmedia.cl",
+            "font-size: 1.2rem; font-weight: bold; color: #007bff;", // Azul (color del cliente)
+            "font-size: 1rem; color: #ffffff;",
+            "font-size: 1rem; font-weight: bold; color: #0d9488; text-decoration: underline;", // Verde (color de Oben Media)
+            "font-size: 1rem; color: #ffffff;",
+            "font-size: 1rem; color: #4f46e5;" // Indigo (color de Oben Media)
+        );
+    </script>
+
 </body>
 </html>
-
