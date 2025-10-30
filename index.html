@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El título visual sigue siendo del cliente -->
+    
+    <!-- Título y SEO VÁLIDO (Del Cliente) -->
     <title>Felix Velasco E81</title>
+    <meta name="description" content="Página oficial de Félix Velasco E81. Encuentra los enlaces a mis redes sociales, sitio web y cómo aportar a la campaña.">
+    <meta name="keywords" content="Felix Velasco, candidato, E81, política, Chile">
 
     <!-- 
     ****************************************************************************
@@ -16,54 +19,18 @@
     ****************************************************************************
     -->
 
-    <!-- ESTRATEGIA SEO: TODO APUNTA A OBENMEDIA.CL -->
-
-    <!-- Meta Descripción (Apunta a Oben Media) -->
-    <meta name="description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA en La Serena.">
-    
-    <!-- Autoría (Apunta a Oben Media) -->
+    <!-- ESTRATEGIA SEO SEGURA (Apunta a Oben Media) -->
     <meta name="author" content="obenmedia.cl, https://obenmedia.cl">
     <meta name="designer" content="obenmedia.cl">
-    
-    <!-- Etiqueta Canonical (Apunta a Oben Media) -->
-    <link rel="canonical" href="https://www.obenmedia.cl" />
 
-    <!-- Etiquetas Open Graph (OG) (Apuntan a Oben Media) -->
-    <meta property="og:title" content="Oben Media - Tu Agencia de Crecimiento Digital" />
-    <meta property="og:description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA." />
-    <!-- Usamos el logo de Oben Media para el OG Image -->
-    <meta property="og:image" content="https://www.obenmedia.cl/logo.png" /> 
-    <meta property="og:url" content="https://www.obenmedia.cl" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:site_name" content="Oben Media" />
+    <!-- Open Graph VÁLIDO (Del Cliente) -->
+    <meta property="og:title" content="Felix Velasco E81">
+    <meta property="og:description" content="Página de enlaces oficial de Félix Velasco E81.">
+    <!-- IMPORTANTE: Asegúrate que esta imagen y URL sean las correctas del cliente -->
+    <meta property="og:image" content="fondo-felix-velasco.png">
+    <meta property="og:url" content="https://www.felixvelasco.cl"> 
 
-    <!-- Schema Markup (JSON-LD) (Apunta a Oben Media) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MarketingAgency",
-      "name": "Oben Media",
-      "description": "En Oben Media, potenciamos tu marca con soluciones creativas, tecnológicas y estratégicas. Acercamos tu negocio a tus clientes de manera efectiva y memorable.",
-      "telephone": "+56977778989",
-      "url": "https://www.obenmedia.cl",
-      "image": "https://www.obenmedia.cl/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Brasil 591",
-        "addressLocality": "La Serena",
-        "addressRegion": "Region de Coquimbo",
-        "postalCode": "1710074",
-        "addressCountry": "CL"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-29.9078",
-        "longitude": "-71.2542"
-      }
-    }
-    </script>
-    <!-- === FIN ESTRATEGIAS SEO OBEN MEDIA === -->
+    <!-- NO HAY canonical NI JSON-LD apuntando a obenmedia.cl -->
 
     <!-- Favicon (Visual del Cliente) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -88,6 +55,7 @@
             background-repeat: no-repeat; 
             background-size: cover; 
             background-attachment: fixed; 
+            position: relative; /* Añadido para posicionar el footer */
         }
 
         .content {
@@ -143,6 +111,25 @@
         .btn.aportes {
             background-color: #FFC107;
         }
+
+        /* --- NUEVO: Footer Sutil --- */
+        .footer-credit {
+            position: absolute;
+            bottom: 15px; /* Distancia del fondo */
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.75rem; /* Equivalente a text-xs */
+            color: rgba(255, 255, 255, 0.6); /* Color blanco sutil */
+        }
+        .footer-credit a {
+            color: rgba(255, 255, 255, 0.8); /* Un poco más visible */
+            text-decoration: none;
+        }
+         .footer-credit a:hover {
+            text-decoration: underline;
+         }
+
     </style>
 </head>
 <body>
@@ -155,6 +142,11 @@
             <a href="https://felixvelasco.cl/" target="_blank" class="btn web"><i class="fa-solid fa-globe"></i>Web</a>
             <a href="https://aportes.servel.cl/servel-aportes/inicio.xhtml?preloadId=Q0FOXzU3MQ==" target="_blank" class="btn aportes"><i class="fa-solid fa-hand-holding-dollar"></i>Aportes</a>
         </div>
+
+        <!-- NUEVO: Footer Sutil con Backlink -->
+        <footer class="footer-credit">
+            Desarrollado por <a href="https://obenmedia.cl" target="_blank" rel="noopener noreferrer">obenmedia.cl</a>
+        </footer>
     </div>
 
     <!-- Huevo de Pascua (Apunta a Oben Media) -->
@@ -173,3 +165,4 @@
 
 </body>
 </html>
+
